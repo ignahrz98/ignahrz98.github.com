@@ -4,10 +4,25 @@ Marrón:  #8E4A49;
 Verde semi oscuro:  #8E4A49;
 Verde alegre: #80FFEC;
 Verde mas claro: #C2FBEF;
+Azul:  #283c86;
 */
 
 html {
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #283c86;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .container {
@@ -27,18 +42,80 @@ html {
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
+	box-shadow: 0 3px 6px #000;
+	border-radius: 4px;
+	position: relative;
+	padding: 1.8em;
 }
 
-.red {
-	height: 200px;
-	width: 100px;
-	background-color: red;
+.actions {
+	position: absolute;
+	top: 1em;
+	right: 1em;
 }
 
-#boton-pago {
-	background-color: yellow;
+.close {
+	height: 40px;
+	width: 40px;
+	color: white;
+	border-radius: 50%;
+	background-color: #283c86;
+	display: inline-block;
+	font-weight: 300;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-td {
-	border: solid 1px;
+.paragraph {
+	line-height: 1.8em;
+	font-weight: 300;
+}
+
+.fa-star {
+	color: #ffc400;
+}
+
+.table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td, .table th {
+	padding: 1em;
+	text-align: left;
+}
+
+.table tr:nth-child(even){
+	background-color: #C2FBEF;
+}
+
+.title-item {
+	/*border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #283c86;*/
+	border-bottom: solid 2px #283c86;
+	padding-bottom: 1em;
+	font-size: 2em;
+}
+
+.address {
+	font-weight: bold;
+	color: #283c86;
+	font-size: 1.2em;
+}
+
+.main-image {
+	float: left;
+	margin-right: 1em;
+	height: 250px;
+}
+
+.position {
+	background-color: #283c86;
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-right: 0.5em;
 }
